@@ -1,7 +1,8 @@
 package com.alura.foro.hub.controller;
 
 import com.alura.foro.hub.domain.topic.*;
-import com.alura.foro.hub.topic.ListOfTopicsDTO;
+import com.alura.foro.hub.domain.topic.ListOfTopicsDTO;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -20,6 +21,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/topic")
+@SecurityRequirement(name = "bearer-key")
 public class TopicController {
 
     @Autowired

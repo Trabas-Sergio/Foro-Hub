@@ -1,4 +1,4 @@
-package com.alura.foro.hub.topic;
+package com.alura.foro.hub.domain.topic;
 
 import com.alura.foro.hub.domain.topic.Topic;
 
